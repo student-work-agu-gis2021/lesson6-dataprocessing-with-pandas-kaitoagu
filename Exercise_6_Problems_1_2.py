@@ -17,6 +17,11 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
+# Define file path:
+fp=r'data/1091402.txt'
+# Read data using varying amount of spaces as separator and specifying '-9999' as NoData values
+data = pd.read_csv(fp,skiprows=2,delim_whitespace=True, na_values=['-9999'])
+data.head()
 
 # ### Part 2 
 # 
