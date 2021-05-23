@@ -134,6 +134,7 @@ monthly_data = None
 
 # YOUR CODE HERE 9
 
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print the length of variable monthly_data
 print(len(monthly_data))
