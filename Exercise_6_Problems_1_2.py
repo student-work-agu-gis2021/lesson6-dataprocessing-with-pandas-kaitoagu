@@ -118,9 +118,8 @@ avg_temp_1969 = None
 
 # YOUR CODE HERE 8
 data['TMAX']=data['39']
-t=data[(data["DATE"]>'19690501')&(data["DATE"]<'19690831')]
-t_max=t["TMAX"]
-avg_temp_1969=t_max.mean()
+t=data[(data['DATE']<19690901)&(data['DATE']>19690431)].loc[:,'TMAX']
+avg_temp_1969=t.mean()
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print a number
 print('Average temperature (F) for the Summer of 69:', round(avg_temp_1969, 2))
@@ -133,6 +132,7 @@ print('Average temperature (F) for the Summer of 69:', round(avg_temp_1969, 2))
 monthly_data = None
 
 # YOUR CODE HERE 9
+
 
 
 #CAUTION!!! DON'T EDIT THIS PART START
